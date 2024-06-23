@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- ^fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- ^ bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- ^ my css style -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container w-75 my-5 ">
+
+            <div class="login_card w-75 m-auto text-center  p-5">
+                <h1>Smart Login System</h1>
+                <input type="text" id="email" class="form-control bg-transparent text-white rounded-1 my-3" placeholder="Enter your email">
+                <input type="password" id="password" class="form-control bg-transparent text-white  rounded-1 my-3"
+                    placeholder="Enter your password">
+                <button class="btn btn-outline-info btn-color w-100 rounded-1 my-3" onclick="login(this)">Login</button>
+                <div class="alert alert-danger d-none">
+                    <small id="message"></small>
+                </div>
+                <p class="text-white">
+                    Don’t have an account?
+                    <a href="./pages/signup.html" class="text-white ">Sign Up</a>
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+body {
+    background-color: #24353f;
+    font-family: "Titillium Web", sans-serif;
+    color: #fff;
+}
+
+h1 {
+
+    font-size: 40px;
+    font-family: "Titillium Web", sans-serif;
+    /* line-height: 40px; */
+    color: #17a2b8;
+    /* position: relative; */
+}
+
+.bg-main{
+    background-color: #24353f;
+}
+.text-gray{
+    color: #ced4da;
+}
+.text-gray:hover{
+    color: #fff;
+}
+.shadoww{
+    box-shadow: rgb(0, 0, 0) -5px 2px 54px -9px;
+}
+
+.h-vh{
+    height: 90vh;
+}
+.my-input {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+.login_card {
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+
+}
+.form-control::placeholder {
+    color: #ced4da !important;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #80bdff;
+    
+}
+
+.form-control {
+    border-color: #ced4da;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+text-decoration: underline;
+}
+
+
+.btn-color {
+
+    --bs-btn-border-color: #80bdff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #17a2b8;
+    --bs-btn-hover-border-color: #17a2b8;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- ^fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- ^ bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- ^ my css style -->
+    <link rel="stylesheet" href="../css/style.css">
+
+
+</head>
+
+<body>
+    <main>
+        <div class="container w-75 my-5 ">
+            <div class="login_card w-75 m-auto text-center p-5">
+                <h1>Smart Login System</h1>
+                <input type="text" id="newname" class="form-control bg-transparent text-white rounded-1 my-3"
+                    oninput="validateInput(this)" placeholder="Enter your name">
+                <div class="alert alert-danger d-none">
+                    <small>Name must have at least 3 characters </small>
+                </div>
+
+                <input type="text" id="newemail" class="form-control bg-transparent text-white rounded-1 my-3"
+                    oninput="validateInput(this)" placeholder="Enter your email">
+                <div class="alert alert-danger d-none">
+                    <small id="emailAlert" class="d-none">this email is already exist</small>
+                    <small id="emailInvalid" class="d-none">email must match email format</small>
+                </div>
+                <input type="password" id="newpassword" class="form-control bg-transparent  text-white rounded-1 my-3"
+                    oninput="validateInput(this)" placeholder="Enter your password">
+
+                <div class="alert alert-danger d-none">
+                    <small>Name must have at least 8 characters or numbers </small>
+                </div>
+                <button class="btn btn-outline-info btn-color w-100 rounded-1 my-3" onclick="addUser(this)">Sign
+                    Up</button>
+                <div class="alert alert-danger d-none">
+                    <small>all inputs must be valid</small>
+                </div>
+
+                <p class="text-white">
+                    You have an account?
+                    <a href="../index.html" class="text-white "> Signin</a>
+                </p>
+            </div>
+
+
+        </div>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
